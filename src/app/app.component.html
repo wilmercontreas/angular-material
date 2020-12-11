@@ -1,8 +1,16 @@
-<mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-    <span class="example-spacer"></span>
-    <span>Mundo SETI</span>
-    <mat-icon class="mat-icon-rtl-mirror" svgIcon="..//assets/logo-seti.png"></mat-icon>
-</mat-toolbar>
+<mat-sidenav-container class="example-container">
+
+    <mat-sidenav #sidenav>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <button (click)="sidenav.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"><mat-icon>menu</mat-icon></button>
+            <span class="example-spacer"></span>
+            <span>Mundo SETI</span>
+            <mat-icon svgIcon="seti"> </mat-icon>
+        </mat-toolbar>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
