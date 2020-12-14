@@ -8,16 +8,13 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-  // SIDENAV
 
   // ICONS
   constructor(private newIcon: MatIconRegistry,  private domSan: DomSanitizer ){
-
-    newIcon.addSvgIcon('seti', domSan.bypassSecurityTrustResourceUrl('./assets/icons/logo-seti.svg'));
-    newIcon.addSvgIcon('cerrar-sesion', domSan.bypassSecurityTrustResourceUrl('./assets/icons/cerrar-sesion.svg'));
-    newIcon.addSvgIcon('flecha-atras', domSan.bypassSecurityTrustResourceUrl('./assets/icons/flecha-hacia-atras.svg'));
-  
+    newIcon.addSvgIcon('log-out', domSan.bypassSecurityTrustResourceUrl('assets/icons/cerrar-sesion.svg'));
+    newIcon.addSvgIcon('logo', domSan.bypassSecurityTrustResourceUrl('assets/icons/logo-seti.png'));
+    newIcon.addSvgIcon('back', domSan.bypassSecurityTrustResourceUrl('./assets/icons/flecha-hacia-atras.svg'));
+    newIcon.addSvgIcon('add', domSan.bypassSecurityTrustResourceUrl('./assets/icons/mas.svg'));
   }
-
+  
 }
