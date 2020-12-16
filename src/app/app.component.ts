@@ -12,7 +12,7 @@ export class AppComponent {
   // ICONS
   constructor(private newIcon: MatIconRegistry,  private domSan: DomSanitizer ){
     newIcon.addSvgIcon('log-out', domSan.bypassSecurityTrustResourceUrl('assets/icons/cerrar-sesion.svg'));
-    newIcon.addSvgIcon('logo', domSan.bypassSecurityTrustResourceUrl('assets/icons/logo-seti.png'));
+    newIcon.addSvgIcon('logo', domSan.bypassSecurityTrustResourceUrl('assets/icons/logo-seti-blanco.svg'));
     newIcon.addSvgIcon('back', domSan.bypassSecurityTrustResourceUrl('./assets/icons/flecha-hacia-atras.svg'));
     newIcon.addSvgIcon('add', domSan.bypassSecurityTrustResourceUrl('./assets/icons/mas.svg'));
   }

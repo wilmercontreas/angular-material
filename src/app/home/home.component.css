@@ -24,7 +24,7 @@
 }
 
 .buttons-container {
-    margin: 2em 0 4em 0;
+    margin: 2em 0 6em 0;
 }
 
 .button {
@@ -44,16 +44,15 @@
     background-color: #ffdfdfdb;
 }
 
+.mat-title {
+    color: #777676;
+}
 
-/*
-.slogan-oscuro {
+.mat-subheading-2,
+.mat-caption {
+    color: #b5b4b4;
+}
+
+.mat-body-2 {
     color: #de1920;
-    font-weight: bold;
-    font-size: .8em;
 }
-
-.slogan-claro {
-    color: #080808;
-    font-size: .7em;
-}
-*/
